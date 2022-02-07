@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CKK.Logic.Models
 {
-	class StoreItem
+	public class StoreItem
 	{
 		private Product _Product; //instance variable for _Product 
 		private int _Quantity; //instance variable for _Quantity 

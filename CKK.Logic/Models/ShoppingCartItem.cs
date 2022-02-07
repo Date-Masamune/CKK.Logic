@@ -1,7 +1,7 @@
 ﻿
 namespace CKK.Logic.Models
 {
-	class ShoppingCartItem
+	public class ShoppingCartItem
 	{
 		private Product _Product; //instance variable for _Product 
 		private int _Quantity; //instance variable for _Quantity 

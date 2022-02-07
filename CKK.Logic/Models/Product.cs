@@ -1,7 +1,7 @@
 ﻿
 namespace CKK.Logic.Models
 {
-	class Product
+	public class Product
 	{
 		private int _Id; //instance variable for _Id
 		private string _Name; //instance variable for _Name
@@ -20,9 +20,9 @@ namespace CKK.Logic.Models
 		}
 
 
-		public void GetName()
+		public string GetName()
 		{
-
+			return _Name;
 		}
 
 
