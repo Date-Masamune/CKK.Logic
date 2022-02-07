@@ -3,20 +3,20 @@ namespace CKK.Logic
 {
 	class Product
 	{
-		private int _id; //instance variable for _Id
-		private string _name; //instance variable for _Name
-		private decimal _price; //instance variable for _Price
+		private int _Id; //instance variable for _Id
+		private string _Name; //instance variable for _Name
+		private decimal _Price; //instance variable for _Price
 
 
 		public int GetId()
 		{
-			return _id; // returns the value of _Id to the client code
+			return _Id; // returns the value of _Id to the client code
 		}
 
 
 		public void SetId(int id)
 		{
-			_id = id;
+			_Id = id;
 		}
 
 
@@ -28,19 +28,19 @@ namespace CKK.Logic
 
 		public void SetName(string name)
 		{
-			_name = name;
+			_Name = name;
 		}
 
 
 		public decimal GetPrice()
 		{
-			return _price; // returns the value of _Price to the client code
+			return _Price; // returns the value of _Price to the client code
 		}
 
 
 		public void SetPrice(decimal price)
 		{
-			_price = price;
+			_Price = price;
 		}
 	}
 }
