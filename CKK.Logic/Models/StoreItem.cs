@@ -1,5 +1,5 @@
 ﻿using System;
-namespace CKK.Logic
+namespace CKK.Logic.Models
 {
 	class StoreItem
 	{

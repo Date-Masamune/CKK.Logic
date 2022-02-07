@@ -1,5 +1,5 @@
 ﻿
-namespace CKK.Logic
+namespace CKK.Logic.Models
 {
 	class ShoppingCartItem
 	{
