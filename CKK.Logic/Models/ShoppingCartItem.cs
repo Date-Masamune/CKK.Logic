@@ -38,9 +38,9 @@ namespace CKK.Logic.Models
 		}
 
 
-	   public decimal GetTotal()
+	   public static decimal GetTotal()
       {
-			return Total;
+			return = Total;
       }
 
 	}
