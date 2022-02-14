@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CKK.Logic.Models
 {
-   class Store
+   public class Store
    {
 
       private int _Id;  //instance variable for _Id
@@ -39,54 +36,81 @@ namespace CKK.Logic.Models
 
       public void AddStoreItem(Product prod)
       {
-         //Adds a product to the next availabe product(product1, product2, product3).
-          Product1, _Product2, _Product3;
-
-         //If there are  no available product, it will not a product at all
-         // If there is an item in spot two, but not spot one or three, 
-         //then it should put the item in spot 1( the next available spot)
-         //should be an imbetted loop
-            if ( _Product1 = null _Product2 =null _Product3 = null)
+         if (_Product1 == null)
          {
-            Console.WriteLine("Don't add a product");
+            _Product1 = prod;
          }
 
-         else if( _Product1 = available)
+         else if (_Product2 == null)
          {
-            //put item in spot 1
+            _Product2 = prod;
+         }
+
+         else if (_Product3 == null)
+         {
+            _Product3 = prod;
          }
 
       }
-
       public void RemoveStoreItem(int productNum)
-      {
-         // remove product from the desire product
+         {
+            if (productNum == 1)
+            {
+               _Product1 = null;
+            }
 
-         // if there are no product does nothing
-         // If product is out of range, does nothing
-         //It should not shift/move itemps up in the list when things are removed
-         // probably a look here to do it
+            else if (productNum == 2)
+            {
+               _Product2 = null;
+            }
 
-
+            else if (productNum == 3)
+            {
+               _Product3 = null;
+            }
       }
+      public Product GetStoreItem (int productNum)
+            {
+               if (productNum == 1)
+               {
+                  return  _Product1;
+               }
 
-      public Product GetStoreItem(int productNum)
-      {
-         //This is different from FindByld. This methid gets the product by it's position (product1, 2, 3)
-           //Should return correct product
-         
-         //If it is an invalid productNumber, the it will return null
-         //If there is not an item in the desire spot, it will return null
-      }
+               else if (productNum == 2)
+               {
+                  return  _Product2;
+               }
 
-      public Product FindStoreItemByld(int id)
-      {
+               else if (productNum == 3)
+               {
+                  return  _Product3;
+               }
+               return null;
+            }
 
-         //This will return the product that has the same Id(if there is one)
-         //If there are not items with that id, then it should return null
-         //If there are more then one item with that Id, then it will return the first one
+          public Product FindStoreItemByld(int Id)
+            {
+               if (_Product1.GetId() == Id)
+               {
+                  return _Product1;
+               }
 
-      }
+               else if (_Product2.GetId() == Id)
+               {
+                  return _Product2;
+               }
+
+               else if (_Product3.GetId() == Id)
+               {
+                  return _Product3;
+               }
+               return null;
+            }
+        
+
+      
+
+      
 
 
    }
