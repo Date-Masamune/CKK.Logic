@@ -6,7 +6,7 @@ namespace CKK.Logic.Models
     class ShoppingCart
     {
         private Customer _Customer; //instance variable for _Customer
-        private ShoppingCartItem _Product1; //instance variable for _Product1
+        private ShoppingCartItem _Product1; //instance variable for _Product1_Prod
         private ShoppingCartItem _Product2; //intsance variable for _Product2
         private ShoppingCartItem _Product3; //instance variable for _Product3
 
@@ -39,17 +39,30 @@ namespace CKK.Logic.Models
 
         ShoppingCartItem GetProductByld(int id)
         {
-            return 
+            if(_Product1.GetProduct().GetId() == id)
+            {
+                return _Product1;
+            }
+
+            if(_Product2.GetProduct().GetId() == id)
+            {
+                return _Product2;
+            }
+
+            if(_Product3.GetProduct().GetId() == id)
+            {
+                return _Product3;
+            }
         }
 
         public decimal GetTotal()
         {
-
+             
         }
         
         ShoppingCartItem GetProduct(int productNum)
         {
-
+            
         }
 
     }
