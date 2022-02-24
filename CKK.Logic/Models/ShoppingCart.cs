@@ -22,13 +22,35 @@ namespace CKK.Logic.Models
             return _Customer.GetId();
         }
 
-        public ShoppingCartItem AddProduct(int Product, quantity prod)
+        public ShoppingCartItem AddProduct(int quantity, Product prod)
         {
 
         }
 
+        public ShoppingCartItem AddProduct(Product prod)
+        {
 
+        }
 
+        public ShoppingCartItem RemoveProduct(int quantity, Product prod)
+        {
+
+        }
+
+        ShoppingCartItem GetProductByld(int id)
+        {
+            return 
+        }
+
+        public decimal GetTotal()
+        {
+
+        }
+        
+        ShoppingCartItem GetProduct(int productNum)
+        {
+
+        }
 
     }
 }
