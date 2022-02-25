@@ -24,14 +24,47 @@ namespace CKK.Logic.Models
 
         public ShoppingCartItem AddProduct(int quantity, Product prod)
         {
+            if(quantity < 1)
+            {
+                return null;
+            }
 
+            if(_Product1 != null && _Product1.GetProduct().GetId() == prod.GetId() )
+            {
+                _Product1.SetQuantity(_Product1.GetQuantity() + quantity);
+                return _Product1;
+            }
+
+            if(_Product2 != null  &&  _Product2.GetProduct().GetId() == prod.GetId() )
+                {
+                _Product2.SetQuantity(_Product2.GetQuantity() + quantity);
+                return _Product2;
+                }
+
+            if(_Product3 != null && _Product3.GetProduct().GetId() == prod.GetId() )
+                    {
+                _Product3.SetQuantity(_Product3.GetQuantity() + quantity); 
+                return _Product3;
+                    {
+                     
+                    }
+                   
+            }
         }
 
         public ShoppingCartItem AddProduct(Product prod)
         {
+            if()
+            {
+
+            }
+
+            else
+            {
+
+            }
 
         }
-
         public ShoppingCartItem RemoveProduct(int quantity, Product prod)
         {
 
@@ -57,11 +90,13 @@ namespace CKK.Logic.Models
 
         public decimal GetTotal()
         {
-             
+
         }
-        
+
+
         ShoppingCartItem GetProduct(int productNum)
         {
+           
             
         }
 
