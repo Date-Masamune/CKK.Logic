@@ -54,19 +54,45 @@ namespace CKK.Logic.Models
 
         public ShoppingCartItem AddProduct(Product prod)
         {
-            if()
-            {
-
-            }
-
-            else
-            {
-
-            }
-
+            return AddProduct(1, prod);
         }
         public ShoppingCartItem RemoveProduct(int quantity, Product prod)
         {
+            if(quantity < 1)
+            {
+                return null;
+            }
+
+            if(_Product1 != null && _Product1.GetProduct().GetId() == prod.GetId() )
+            {   
+                if(_Product1.GetQuantity() < 1)
+                {
+                    return null;
+                }
+                _Product1.SetQuantity(_Product1.GetProduct().GetId() - quantity);
+                return _Product1;
+            }
+
+            if(_Product2 != null && _Product2.GetProduct().GetId() == prod.GetId() )
+            {
+                if(_Product2.GetQuantity() < 1)
+                {
+                    return null;
+                }
+
+                _Product2.SetQuantity(_Product2.GetProduct().GetId() - quantity);
+                return _Product2;
+            }
+
+            if(_Product3 != null && _Product3.GetProduct().GetId() == prod.GetId() )
+            {       
+                if(_Product3.GetQuantity() < 1)
+                {
+                    return null;
+                }
+                _Product3.SetQuantity(_Product3.GetProduct().GetId() - quantity);
+                return _Product3;
+            }
 
         }
 
