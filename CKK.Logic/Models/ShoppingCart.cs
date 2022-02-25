@@ -42,14 +42,30 @@ namespace CKK.Logic.Models
                 }
 
             if(_Product3 != null && _Product3.GetProduct().GetId() == prod.GetId() )
-                    {
+            {
                 _Product3.SetQuantity(_Product3.GetQuantity() + quantity); 
                 return _Product3;
-                    {
+                   { 
                      
-                    }
-                   
+                   }        
             }
+            
+            if(_Product1 == null)
+            {
+                  
+            }
+
+            if(_Product2 == null)
+            {
+
+            }
+
+            if(_Product3 == null)
+            {
+
+            }
+
+            return null;
         }
 
         public ShoppingCartItem AddProduct(Product prod)
@@ -93,7 +109,7 @@ namespace CKK.Logic.Models
                 _Product3.SetQuantity(_Product3.GetProduct().GetId() - quantity);
                 return _Product3;
             }
-
+            return null;
         }
 
         ShoppingCartItem GetProductByld(int id)
@@ -112,18 +128,19 @@ namespace CKK.Logic.Models
             {
                 return _Product3;
             }
+            return null;
         }
 
         public decimal GetTotal()
         {
-
+            return 1.00m;
         }
 
 
         ShoppingCartItem GetProduct(int productNum)
         {
-           
-            
+
+            return _Product1;
         }
 
     }
