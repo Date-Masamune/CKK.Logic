@@ -52,17 +52,26 @@ namespace CKK.Logic.Models
             
             if(_Product1 == null)
             {
-                  
+               _Product1.SetProduct(prod);
+               _Product1.SetQuantity(quantity);
+
+                return _Product1;
             }
 
             if(_Product2 == null)
             {
+                _Product2.SetProduct(prod);
+                _Product2.SetQuantity(quantity);
 
+                return _Product2;
             }
 
             if(_Product3 == null)
             {
+                _Product3.SetProduct(prod);
+                _Product3.SetQuantity(quantity);
 
+                return _Product3;
             }
 
             return null;
@@ -133,14 +142,15 @@ namespace CKK.Logic.Models
 
         public decimal GetTotal()
         {
-            return 1.00m;
+            return 
+            
         }
 
 
         ShoppingCartItem GetProduct(int productNum)
         {
-
-            return _Product1;
+           
+            
         }
 
     }
