@@ -143,14 +143,14 @@ namespace CKK.Logic.Models
 
         public decimal GetTotal()
         {
-            
+            return _Product1.GetTotal();
             
         }
 
 
         ShoppingCartItem GetProduct(int productNum)
         {
-            
+            return .GetProduct();
             
         }
 

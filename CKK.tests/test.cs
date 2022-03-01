@@ -3,7 +3,7 @@ using Xunit;
 
 namespace CKK.tests
 {
-    public class UnitTest1
+    public class test
     {
         [Fact]
         public void Test1()

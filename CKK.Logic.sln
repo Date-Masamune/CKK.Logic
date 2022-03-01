@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CKK.Logic", "CKK.Logic\CKK.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CKK", "..\..\..\Downloads\CKK-1\CKK\CKK.csproj", "{FB589E6B-F257-44E4-A9B0-2769F0296041}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CKK.tests", "CKK.tests\CKK.tests.csproj", "{32C11AAF-6C85-4842-A450-B16FA7EF65FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCK.tests", "CCK.tests\CCK.tests.csproj", "{73E80143-688F-4E83-9BD3-D5AD44C22B51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{FB589E6B-F257-44E4-A9B0-2769F0296041}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB589E6B-F257-44E4-A9B0-2769F0296041}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB589E6B-F257-44E4-A9B0-2769F0296041}.Release|Any CPU.Build.0 = Release|Any CPU
-		{32C11AAF-6C85-4842-A450-B16FA7EF65FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32C11AAF-6C85-4842-A450-B16FA7EF65FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32C11AAF-6C85-4842-A450-B16FA7EF65FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32C11AAF-6C85-4842-A450-B16FA7EF65FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E80143-688F-4E83-9BD3-D5AD44C22B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E80143-688F-4E83-9BD3-D5AD44C22B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E80143-688F-4E83-9BD3-D5AD44C22B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E80143-688F-4E83-9BD3-D5AD44C22B51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
