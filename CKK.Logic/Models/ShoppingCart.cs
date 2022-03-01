@@ -3,7 +3,7 @@
 
 namespace CKK.Logic.Models
 {
-    class ShoppingCart
+        public class ShoppingCart
     {
         private Customer _Customer; //instance variable for _Customer
         private ShoppingCartItem _Product1; //instance variable for _Product1_Prod
@@ -122,7 +122,7 @@ namespace CKK.Logic.Models
             return null;
         }
 
-        ShoppingCartItem GetProductByld(int id)
+        public ShoppingCartItem GetProductByld(int id)
         {
             if(_Product1.GetProduct().GetId() == id)
             {
@@ -144,14 +144,15 @@ namespace CKK.Logic.Models
         public decimal GetTotal()
         {
             return _Product1.GetTotal();
-            
+
         }
 
 
-        ShoppingCartItem GetProduct(int productNum)
+        public ShoppingCartItem GetProduct(int productNum)
         {
-            return .GetProduct();
-            
+             
+
+
         }
 
     }
