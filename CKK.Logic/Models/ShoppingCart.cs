@@ -24,6 +24,7 @@ namespace CKK.Logic.Models
 
         public ShoppingCartItem AddProduct(int quantity, Product prod)
         {
+            // checks for valid quantity and product; adds quantity if found
             if(quantity < 1)
             {
                 return null;
@@ -49,31 +50,29 @@ namespace CKK.Logic.Models
                      
                    }        
             }
-            
-            if(_Product1 == null)
+
+            //Adds a new Product if there is none
+            if (_Product1 == null)
             {
-               _Product1.SetProduct(prod);
-               _Product1.SetQuantity(quantity);
+                _Product1 = new ShoppingCartItem(prod, quantity);
 
                 return _Product1;
             }
 
             if(_Product2 == null)
             {
-                _Product2.SetProduct(prod);
-                _Product2.SetQuantity(quantity);
+                _Product2 = new ShoppingCartItem(prod, quantity);
 
                 return _Product2;
             }
 
             if(_Product3 == null)
             {
-                _Product3.SetProduct(prod);
-                _Product3.SetQuantity(quantity);
+                _Product3 = new ShoppingCartItem(prod, quantity);
 
                 return _Product3;
             }
-
+     
             return null;
         }
 
@@ -83,6 +82,7 @@ namespace CKK.Logic.Models
         }
         public ShoppingCartItem RemoveProduct(int quantity, Product prod)
         {
+            // check for valid quantity, removes if found. 
             if(quantity < 1)
             {
                 return null;
@@ -90,6 +90,7 @@ namespace CKK.Logic.Models
 
             if(_Product1 != null && _Product1.GetProduct().GetId() == prod.GetId() )
             {   
+                //returns the product changed or null
                 if(_Product1.GetQuantity() < 1)
                 {
                     return null;
@@ -149,7 +150,16 @@ namespace CKK.Logic.Models
 
         ShoppingCartItem GetProduct(int productNum)
         {
-           
+            if()
+            {
+                return productNum;
+            }
+
+            else
+            {
+                return null;
+            }
+
             
         }
 
