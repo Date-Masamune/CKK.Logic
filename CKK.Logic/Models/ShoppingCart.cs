@@ -143,23 +143,14 @@ namespace CKK.Logic.Models
 
         public decimal GetTotal()
         {
-            return 
+            
             
         }
 
 
         ShoppingCartItem GetProduct(int productNum)
         {
-            if()
-            {
-                return productNum;
-            }
-
-            else
-            {
-                return null;
-            }
-
+            
             
         }
 
