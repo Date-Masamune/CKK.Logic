@@ -22,7 +22,7 @@ namespace CKK.Logic.Models
             return _Customer.GetId();
         }
 
-        public ShoppingCartItem AddProduct(int quantity, Product prod)
+        public ShoppingCartItem AddProduct(Product prod, int quantity)
         {
             // checks for valid quantity and product; adds quantity if found
             if(quantity < 1)
@@ -78,9 +78,9 @@ namespace CKK.Logic.Models
 
         public ShoppingCartItem AddProduct(Product prod)
         {
-            return AddProduct(1, prod);
+            return AddProduct(prod, 1);
         }
-        public ShoppingCartItem RemoveProduct(int quantity, Product prod)
+        public ShoppingCartItem RemoveProduct(Product prod, int quantity)
         {
             // check for valid quantity, removes if found. 
             if(quantity < 1)
@@ -122,7 +122,7 @@ namespace CKK.Logic.Models
             return null;
         }
 
-        public ShoppingCartItem GetProductByld(int id)
+        public ShoppingCartItem GetProductById(int id)
         {
             if(_Product1.GetProduct().GetId() == id)
             {
