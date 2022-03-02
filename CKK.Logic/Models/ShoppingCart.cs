@@ -143,17 +143,40 @@ namespace CKK.Logic.Models
 
         public decimal GetTotal()
         {
-            return _Product1.GetTotal();
+          decimal t1 = _Product1.GetProduct().GetPrice() * _Product1.GetQuantity();
+          decimal t2 = _Product2.GetProduct().GetPrice() * _Product2.GetQuantity();
+          decimal t3 = _Product3.GetProduct().GetPrice() * _Product3.GetQuantity();
 
-        }
+         return t1 + t2 + t3;
+
+      }
 
 
         public ShoppingCartItem GetProduct(int productNum)
         {
-             
+             if(productNum == 1)
+              {
+              
+            return _Product1;
 
+              }
+            
+             if(productNum == 1)
+             {
+            
+            return _Product2;
 
-        }
+             }
+
+             if(productNum == 1)
+             {
+            
+            return _Product3;
+
+             }
+         return null;
+      
+      }
 
     }
 }
