@@ -161,14 +161,14 @@ namespace CKK.Logic.Models
 
               }
             
-             if(productNum == 1)
+             if(productNum == 2)
              {
             
             return _Product2;
 
              }
 
-             if(productNum == 1)
+             if(productNum == 3)
              {
             
             return _Product3;
