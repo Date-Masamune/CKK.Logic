@@ -30,6 +30,7 @@ namespace CKK.Logic.Models
                 return null;
             }
 
+            //Checks for product and adds quantity if found
             if(_Product1 != null && _Product1.GetProduct().GetId() == prod.GetId() )
             {
                 _Product1.SetQuantity(_Product1.GetQuantity() + quantity);
