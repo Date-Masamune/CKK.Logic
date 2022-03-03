@@ -1,0 +1,10 @@
+C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\b\CKK.Logic\Debug\net5.0\CKK.Logic.deps.json
+C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\b\CKK.Logic\Debug\net5.0\CKK.Logic.dll
+C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\b\CKK.Logic\Debug\net5.0\ref\CKK.Logic.dll
+C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\i\CKK.Logic\Debug\net5.0\CKK.Logic.csproj.AssemblyReference.cache
+C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\i\CKK.Logic\Debug\net5.0\CKK.Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\i\CKK.Logic\Debug\net5.0\CKK.Logic.AssemblyInfoInputs.cache
+C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\i\CKK.Logic\Debug\net5.0\CKK.Logic.AssemblyInfo.cs
+C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\i\CKK.Logic\Debug\net5.0\CKK.Logic.csproj.CopyComplete
+C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\i\CKK.Logic\Debug\net5.0\CKK.Logic.dll
+C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\i\CKK.Logic\Debug\net5.0\ref\CKK.Logic.dll

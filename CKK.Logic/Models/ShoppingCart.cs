@@ -24,7 +24,7 @@ namespace CKK.Logic.Models
 
         public ShoppingCartItem AddProduct(Product prod, int quantity)
         {
-            // checks for valid quantity and product; adds quantity if found
+            // checks for valid quantity 
             if(quantity < 1)
             {
                 return null;
