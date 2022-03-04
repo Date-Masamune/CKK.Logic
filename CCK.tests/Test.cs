@@ -36,6 +36,36 @@ namespace CCK.tests
             }
         }
 
+        [Fact]
+        public void PassInvalidValue()
+        {
+            try
+            {
+                Customer cust = new Customer();
+                ShoppingCart shopping = new ShoppingCart(cust);
+                Product prod = new Product();
+                //Arrange
+                cust.SetId(1);
+                prod.SetId(1);
+
+
+                //Act
+                var Actual = shopping.AddProduct(prod, -13);
+
+                //Assert
+                Assert.Null(Actual);
+
+            }
+
+            catch
+            {
+                throw new ArgumentNullException();
+
+            }
+        }
+
+
+
 
         [Fact]
         public void CheckRemovingProduct()

@@ -17,4 +17,3 @@ C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\i\CCK.tests\D
 C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\i\CCK.tests\Debug\net5.0\CCK.tests.dll
 C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\i\CCK.tests\Debug\net5.0\ref\CCK.tests.dll
 C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\i\CCK.tests\Debug\net5.0\CCK.tests.genruntimeconfig.cache
-C:\Users\4400112799\Source\Repos\CKK.Logic\.vs\CKK.Logic\v16\lut\0\i\CCK.tests\Debug\net5.0\CCK.tests.csproj.AssemblyReference.cache
