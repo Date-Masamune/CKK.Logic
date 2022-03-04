@@ -90,34 +90,40 @@ namespace CKK.Logic.Models
             }
 
             if(_Product1 != null && _Product1.GetProduct().GetId() == prod.GetId() )
-            {   
+            {
+                _Product1.SetQuantity(_Product1.GetQuantity() - quantity);
+
                 //returns the product changed or null
-                if(_Product1.GetQuantity() < 1)
+                if (_Product1.GetQuantity() < 1)
                 {
                     return null;
                 }
-                _Product1.SetQuantity(_Product1.GetProduct().GetId() - quantity);
+                
                 return _Product1;
             }
 
             if(_Product2 != null && _Product2.GetProduct().GetId() == prod.GetId() )
             {
-                if(_Product2.GetQuantity() < 1)
+                _Product2.SetQuantity(_Product2.GetQuantity() - quantity);
+
+                if (_Product2.GetQuantity() < 1)
                 {
                     return null;
                 }
 
-                _Product2.SetQuantity(_Product2.GetProduct().GetId() - quantity);
+                
                 return _Product2;
             }
 
             if(_Product3 != null && _Product3.GetProduct().GetId() == prod.GetId() )
-            {       
-                if(_Product3.GetQuantity() < 1)
+            {
+                _Product3.SetQuantity(_Product3.GetQuantity() - quantity);
+
+                if (_Product3.GetQuantity() < 1)
                 {
                     return null;
                 }
-                _Product3.SetQuantity(_Product3.GetProduct().GetId() - quantity);
+                
                 return _Product3;
             }
             return null;

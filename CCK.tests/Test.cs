@@ -32,7 +32,7 @@ namespace CCK.tests
             catch
             {
                 throw new ArgumentNullException();
-                //Console.WriteLine("Error occured");
+                
             }
         }
 
@@ -47,23 +47,23 @@ namespace CCK.tests
             Product prod = new Product();
 
             //Arrange
-            cust.SetId(1);
-            prod.SetId(1);
+            cust.SetId(2);
+            prod.SetId(2);
 
                 //Act
-                shopping.AddProduct(prod, 10);
-                int Actual = shopping.RemoveProduct(prod, 3).GetQuantity();
+                var shop = shopping.AddProduct(prod, 4);
+                var Actual = shopping.RemoveProduct(prod, 2).GetQuantity();
 
                 //Assert
-                Assert.Equal(7, Actual);
+                Assert.Equal(2, Actual);
             }
             catch
             {
-
+                
 
                 throw new ArgumentNullException();
-                //Console.WriteLine("Error occured");
                 
+
             }
 
           
@@ -72,15 +72,38 @@ namespace CCK.tests
         [Fact]
         public void ChecksAccTotal()
         {
-            //Arrange
-            
+            try
+            {
+                Customer cust = new Customer();
+                ShoppingCart shopping = new ShoppingCart(cust);
+                Product prod = new Product();
+                Product prod2 = new Product();
+                Product prod3 = new Product();
 
-            //Act
-            
+                //Arrange
+                prod.SetId(1);
+                prod2.SetId(2);
+                prod3.SetId(3);
 
+                prod.SetPrice(5);
+                prod2.SetPrice(5);
+                prod3.SetPrice(5);
+                //Act
+                shopping.AddProduct(prod, 1);
+                shopping.AddProduct(prod2, 2);
+                shopping.AddProduct(prod3, 3);
 
-            //Assert
+                var actual = shopping.GetTotal();
+                //Assert
+                Assert.Equal(30, actual);
+                
+            }
 
+            catch
+            {
+                throw new ArgumentNullException();
+
+            }
         }
     }
  }
